@@ -1,0 +1,157 @@
+@import "song";
+
+// start
+:root {
+    --color-blank-2: rgba(0, 0, 0, 0.2);
+    --color-blank-5: rgba(0, 0, 0, 5);
+    // 主题--颜色
+    --col1: #5E54CD;
+    --txt-12: 12px;
+    --txt-14: 14px;
+    --txt-16: 16px;
+    --txt-18: 18px;
+    --txt-20: 20px;
+}
+
+$col: #11518F;
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    // background: #5E54CD;
+    background: $col;
+    // background: linear-gradient(135deg, #2F2F8B, #5E54CD);
+}
+
+.image {
+    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@mixin img-hover1 {
+    transform: scale(1.1);
+}
+
+@mixin img-hover2 {
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+nav {
+    position: fixed;
+    z-index: 900;
+    width: 100%;
+    height: 110px;
+    left: 0;
+    top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    transition: all 0.8s;
+    transition-delay: 0.8s;
+
+    .container {
+        position: relative;
+        z-index: 10;
+    }
+
+    &::before {
+        width: 100%;
+        height: 228px;
+        left: 0;
+        top: 0;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, .3), transparent);
+        transition: all 0.8s;
+        transition-delay: 0.8s;
+    }
+
+    &.on {
+        top: -110px;
+
+        &::before {
+            opacity: 0;
+            height: 100%;
+        }
+    }
+}
+
+.nav1 {
+    @extend.df-sb;
+    height: 100%;
+
+    .logo {
+        img {
+            display: block;
+        }
+    }
+}
+
+.nav {
+    width: 900px;
+    max-width: calc(100% - 380px - 22px - 29px - 80px);
+    @extend.df-sb;
+    height: 100%;
+
+    li {
+        height: 100%;
+        flex: 1;
+        position: relative;
+
+        &::after {
+            width: 0;
+            height: 0;
+            left: 50%;
+            bottom: 0;
+
+            border: {
+                left: 6px solid transparent;
+                right: 6px solid transparent;
+                bottom: 9px solid #FFC000;
+            }
+
+            transition: all 0.3s;
+            transform: translateX(-50%) scale(1, 0) rotate(180deg);
+        }
+    }
+
+    a {
+        width: 100%;
+        font-size: 17px;
+        color: #fff;
+        line-height: 110px;
+        text-align: center;
+    }
+
+    li.on,
+    li:hover {
+        a {
+            color: #FFC000;
+            font-weight: bold;
+        }
+
+        &::after {
+            transform: translateX(-50%) scale(1, 1) rotate(0deg);
+        }
+    }
+}
+
+.menu2 {
+    position: fixed;
+    z-index: 905;
+    top: 50px;
+    right: -80px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    transition-delay: 0.5s;
+
+    span {
+        padding-right: 15px;
+    }
+}
+
+nav.on+.menu2 {
+    right: 20px;
+    transition-delay: 1s;
+}
