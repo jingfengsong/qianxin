@@ -6,7 +6,15 @@ $(function () {
     }, 500);
     setTimeout(function () {
         $('.load').hide();
+        $('body').removeClass('bodyhid')
     }, 1400)
+
+    // menu
+
+    $('.menu').click(function () {
+        $('.wrap').fadeToggle(500);
+        $('.wrap').toggleClass('on');
+    })
 
     let invoke = true;
     $('.sou').hover(function (event) {

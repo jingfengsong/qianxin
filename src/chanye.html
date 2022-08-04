@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+@-@include('./header.html',{ title: '产业布局',show: 'active'})
+
+<body class="bodyhid">
+
+    <div class="qx">
+
+        <!-- nav -->
+        @-@include('./nav.html',{ title: '产业布局',show: 'active'})
+
+        <!-- 大图 -->
+        <div class="tu">
+            <img src="image/tu1.png" alt="">
+            <!-- 指示条 -->
+            <div class="tiao">
+                <div class="container">
+                    <p>
+                        当前位置：
+                        <a href="">首页</a> >
+                        <a href="">产业布局</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 二级菜单 -->
+        <div class="menubtn">
+            <div class="container">
+                <ul class="menubtn2">
+                    <li class="on"><a href="">光伏产业</a></li>
+                    <li><a href="#">环保节能</a></li>
+                    <li><a href="#">其他产业</a></li>
+                    <li><a href="#">企业战略</a></li>
+                    <li><a href="#">产业规划</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- footer -->
+        @-@include('./footer.html')
+
+    </div>
+
+    <!-- 底部 -->
+    <script src="js/inside.js" type="text/javascript" charset="utf-8"></script>
+    @-@include('./bottom.html')
+
+</body>
