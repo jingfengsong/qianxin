@@ -119,4 +119,9 @@ $(function () {
         });
     }
 
+    if ($('.dang').length > 0) {
+        console.log('yes')
+        $('html,body').addClass('scrollbg')
+    }
+
 })
