@@ -11,6 +11,41 @@
     }
 }
 
+@media (max-width:1400px) {
+    .aq2 {
+        flex-wrap: wrap;
+    }
+
+    .aq21 {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .zs {
+        width: 100%;
+        max-width: 100%;
+        padding: 80px 0;
+    }
+
+    .zs1 {
+        width: 100%;
+
+        .zs2 {
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        .zs3 {
+            top: auto;
+            right: auto;
+            bottom: 0;
+            transform: translate(-50%, 50%);
+        }
+    }
+
+}
+
 @media (max-width:1200px) {
 
     .nav,
@@ -21,6 +56,7 @@
 
 @media (max-width:992px) {
 
+    .cy42,
     .js61 .lef,
     .js61 .rig,
     .js1 .lef,
@@ -87,9 +123,11 @@
         width: 100%;
         height: auto;
         padding-bottom: 20px;
+        padding-left: 0;
     }
 }
 
+// index
 @media (max-width:768px) {
 
     .a1 {
@@ -190,6 +228,11 @@
                 height: 40px;
             }
         }
+    }
+
+    nav.in::before {
+        height: 60px;
+        background: rgba(0, 0, 0, .4);
     }
 
     .menu2 {
@@ -459,6 +502,7 @@
     }
 }
 
+// inside
 @media (max-width:768px) {
     .js1 .js-vid {
         height: 60vw;
@@ -727,6 +771,333 @@
 
         span {
             display: inline-block;
+        }
+    }
+
+    .cybt {
+        padding: 30px 0 20px;
+        font-size: 20px;
+    }
+
+    .cy1xq {
+        font-size: 14px;
+    }
+
+    #cy1 {
+        padding: 10px;
+
+        .swiper-slide {
+            width: auto;
+            height: auto;
+
+            .img {
+                width: 100%;
+                height: 150px;
+            }
+
+            .det {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .cy21 {
+        li {
+            width: 100%;
+            margin-bottom: 40px;
+            height: auto;
+            padding-bottom: 30px;
+        }
+
+        .img a {
+            height: 120px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        .btt {
+            font-size: 16px;
+        }
+    }
+
+    .cy31 {
+        height: 100px;
+        margin-top: 0;
+
+        .bt {
+            width: 30px;
+
+            p {
+                font-size: 14px;
+                line-height: 30px;
+            }
+        }
+
+        .det {
+            width: calc(100% - 30px);
+            padding: 0 15px;
+        }
+    }
+
+    #cy2 {
+        a {
+            img {
+                max-height: 50px;
+            }
+        }
+    }
+
+    .cy43 {
+        margin-top: 0;
+        height: auto;
+    }
+
+    .cy44 {
+        padding: 20px;
+
+        p {
+            font-size: 14px;
+            line-height: 2;
+            margin-bottom: 20px;
+        }
+    }
+
+    .cy45 {
+        padding: 20px;
+    }
+
+    .list {
+        .item {
+            >span {
+                margin-top: 6px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 2;
+            }
+        }
+    }
+
+    .cy4 {
+        padding-bottom: 40px;
+    }
+
+    .aq1 {
+        padding-bottom: 40px;
+
+        .bt {
+            span {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+                letter-spacing: 0;
+            }
+        }
+
+        >p {
+            line-height: 2;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    }
+
+    .aq21 {
+        .bt {
+            // font-size: 16px;
+            padding: 0 15px;
+        }
+
+        >span {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 2.5;
+
+            &::before {
+                top: 16px;
+                transform: none rotate(45deg);
+            }
+        }
+    }
+
+    // .zs {}
+
+    .zs1 {
+        height: 50vw;
+
+        .zs2 {
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            font-size: 22px;
+        }
+    }
+
+    .aq2 {
+        padding-bottom: 40px;
+    }
+
+    .aq3 {
+        a {
+            width: 100%;
+            margin-bottom: 30px;
+
+            .img {
+                height: 40vw;
+            }
+        }
+
+        a:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .in-page span,
+    .in-page a {
+        padding: 5px 10px;
+        font-size: 0.875rem;
+    }
+
+    .li-1 {
+        padding-bottom: 0;
+
+        li {
+            padding: 20px 0;
+
+            .img {
+                width: 150px;
+                height: 100px;
+
+                &+.det {
+                    width: calc(98% - 150px);
+                }
+            }
+
+            .det {
+                >span {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 12px;
+                    line-height: 1.5;
+                    height: 36px;
+                    margin: 5px 0;
+                }
+
+                a {
+                    width: 100%;
+                    line-height: 30px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .xw {
+        padding-bottom: 20px;
+    }
+
+    .indet {
+        .bt {
+            font-size: 18px;
+        }
+
+        .xq {
+            padding: 20px 0;
+
+            p {
+                font-size: 14px;
+                line-height: 2;
+            }
+        }
+
+        .page {
+            padding: 20px 0;
+
+            p {
+                font-size: 14px;
+                line-height: 2.5;
+            }
+        }
+    }
+
+    .mebtn {
+        padding: 10px;
+        line-height: 2;
+
+        .lef {
+            width: 100%;
+
+            span {
+                margin-right: 10px;
+            }
+        }
+
+        .index-fx {
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+
+    .dj1-rig,
+    .dj1-lef {
+        width: 100%;
+    }
+
+    .djbt {
+        margin-bottom: 20px;
+    }
+
+    #dj1 {
+        width: 100%;
+        height: 60vw;
+
+        a {
+            p {
+                line-height: 2.5;
+                font-size: 14px;
+            }
+
+            span {
+                width: auto;
+                line-height: 2.5;
+                font-size: 14px;
+                padding: 0 15px;
+            }
+        }
+    }
+
+    .dli-1 {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        li {
+            margin-bottom: 15px;
+        }
+    }
+
+    .dli-2 {
+        li {
+            margin-bottom: 15px;
+        }
+    }
+
+    .dj3 {
+        width: 100%;
+
+        &:nth-child(2) {
+            margin-top: 20px;
         }
     }
 }

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+@-@include('./header.html',{ title: '新闻详情',show: 'active'})
+
+<body class="bodyhid">
+
+    <div class="qx">
+
+        <!-- nav -->
+        @-@include('./nav.html',{ title: '新闻详情',show: 'active'})
+
+        <!-- 大图 -->
+        <div class="tu">
+            <img src="image/tu1.png" alt="">
+            <!-- 指示条 -->
+            <div class="tiao">
+                <div class="container">
+                    <p>
+                        当前位置：
+                        <a href="">首页</a> >
+                        <a href="">社会责任</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 二级菜单 -->
+        <div class="menubtn">
+            <div class="container">
+                <ul class="menubtn2">
+                    <li class="on"><a href="">企业新闻</a></li>
+                    <li><a href="#">行业资讯</a></li>
+                    <li><a href="">媒体报道</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 新闻详情 -->
+
+        <div class="xw">
+            <div class="container">
+
+                <div class="indet">
+                    <!-- bt -->
+                    <div class="bt">“青春路·廉同行”——千信集团开展“青春倡廉”主题教育活动</div>
+                    <!-- 介绍 -->
+                    <div class="mebtn">
+                        <div class="lef">
+                            <span>来源：本站</span>
+                            <span>时间：2022/07/12</span>
+                            <span>点击量：254</span>
+                        </div>
+
+                        <!-- 分享 -->
+                        <div class="index-fx">
+                            分享到
+                            <a id="qq" href="javascript:;">
+                                <img src="image/fx-1.png">
+                            </a>
+                            <a id="qqkj" href="javascript:;">
+                                <img src="image/fx-2.png">
+                            </a>
+                            <a id="wx" href="javascript:;">
+                                <img src="image/fx-3.png">
+                                <div class="wechat-qrcode">
+                                    <h4>微信扫一扫：分享</h4>
+                                    <div class="qrcode" id="qrcode1">
+                                    </div>
+                                    <div class="help">
+                                        <p>微信里点“发现”，扫一下</p>
+                                        <p>二维码便可将本文分享至朋友圈。</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a id="wb" href="javascript:;">
+                                <img src="image/fx-4.png">
+                            </a>
+                            <a id="pyq" href="javascript:;">
+                                <img src="image/fx-5.png">
+                                <div class="wechat-qrcode">
+                                    <h4>微信扫一扫：分享</h4>
+                                    <div class="qrcode" id="qrcode2">
+                                    </div>
+                                    <div class="help">
+                                        <p>微信里点“发现”，扫一下</p>
+                                        <p>二维码便可将本文分享至朋友圈。</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a id="dd" href="javascript:;">
+                                <img src="image/fx-6.png">
+                                <div class="wechat-qrcode">
+                                    <h4>钉钉扫一扫：分享</h4>
+                                    <div class="qrcode" id="qrcode3">
+                                    </div>
+                                    <div class="help">
+                                        <p>钉钉里点“+”，扫一下</p>
+                                        <p>二维码便可将本文分享至钉钉。</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <script src="lib/js/qrcode.min.js"></script>
+                        <script type="text/javascript">
+                            var share_url = window.location.href;
+
+                            var share_title = $('.indet .bt').text();
+
+                            // qq
+                            $('#qq').click(function () {
+                                window.open("http://connect.qq.com/widget/shareqq/index.html?url=" + share_url +
+                                    "&sharesource=qzone&title=" + share_title + "&summary=巫山神女景区&desc=巫山神女景区");
+                            })
+
+                            // qq空间
+                            $('#qqkj').click(function () {
+                                window.open("http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=" + share_url +
+                                    "&title=" + share_title + "&site=" + "巫山神女景区" + "", "newwindow");
+                            })
+
+                            // 微博
+                            $('#wb').click(function () {
+                                window.open(
+                                    "http://service.weibo.com/share/share.php?url=" + share_url +
+                                    "&sharesource=weibo&title=" + share_title + "&appkey=678438995"
+                                );
+                            })
+
+                            var qrcode = new QRCode("qrcode1", {
+                                text: share_url,
+                                width: 100,
+                                height: 100,
+                                colorDark: "#00BE0E",
+                                colorLight: "#ffffff",
+                                correctLevel: QRCode.CorrectLevel.H
+                            });
+
+                            var qrcode2 = new QRCode("qrcode2", {
+                                text: share_url,
+                                width: 100,
+                                height: 100,
+                                colorDark: "#52C3F1",
+                                colorLight: "#ffffff",
+                                correctLevel: QRCode.CorrectLevel.H
+                            });
+
+                            var qrcode3 = new QRCode("qrcode3", {
+                                text: share_url,
+                                width: 100,
+                                height: 100,
+                                colorDark: "#4786FF",
+                                colorLight: "#ffffff",
+                                correctLevel: QRCode.CorrectLevel.H
+                            });
+                        </script>
+
+                    </div>
+
+                    <!-- <a href="mqq://">qq</a>
+                    <a href="weixin://">微信</a> -->
+
+                    <!-- 正文 -->
+                    <div class="xq">
+                        <p>7月8日，千信集团党委、纪委、团委联合开展“青春倡廉”主题教育活动，组织青年职工们到铜梁区邱少云纪念馆参观学习，接受革命教育，赓续红色基因，坚定理想信念。</p>
+                        <p>走进邱少云烈士纪念馆的序厅，集团青年职工们仿佛穿越时空，置身于抗美援朝战争那段硝烟滚滚的峥嵘岁月。1949年，邱少云光荣地参加了中国人民解放军，1951年，他作为中国人民志愿军第15军29师的一名战士赴朝作战。1950年10月19日，中国人民志愿军入朝参战，经过两年零九个月的艰苦奋战，打破了美军不可战胜的神话，而邱少云烈士也在这场战争中不幸英勇牺牲。
+                        </p>
+                        <p>进入纪念馆的展厅里，青年职工们通过一张张珍贵的历史图片、一件件满含故事的遗物，全面了解了革命烈士、一级英雄邱少云的成长经历和英勇献身的英雄事迹。青年职工们仔细聆听着解说员的讲述，从内心深处接受了一次革命者大无畏精神的教育和感染，实现了真正意义上的思想“吸氧”、精神“补钙”。少年英雄壮举世代相传，革命薪火永续不灭。
+                        </p>
+                        <p>集团党委委员、纪委书记陈宏参加活动，并带领青年职工向邱少云烈士纪念碑敬献花圈。随后，大家顶着炎炎烈日，面向党旗、整齐排列、高起右手、紧握拳头，重温入党誓词，郑重许下永远对党忠诚，永不叛党的誓言，铿锵有力的誓词，响亮的声音，回荡在纪念馆广场。
+                        </p>
+                        <p style="text-align: center; padding: 30px 0;">
+                            <img src="image/det-1.png" alt="">
+                        </p>
+                        <p>此次活动是千信集团2022年“青春倡廉”系列主题教育活动的一项内容，主题教育活动紧扣建团100周年和“喜迎二十大、永远跟党走、奋进新征程”主题，将组织团员青年职工开展形势政策教育、召开青年谈心谈话、青年家访、讲“廉政”微党课微团课、到红色基地、廉政基地参观学习、开展“青春路·廉同行”主题团日等丰富多彩的活动。旨在通过主题教育活动的开展，进一步加强年轻干部教育管理监督，推动“青春倡廉”行动扎实开展。
+                        </p>
+                    </div>
+
+                    <!-- 上下文 -->
+                    <div class="page">
+                        <p>
+                            <span>上一篇：</span>
+                            <a href="">千诚实业开展办公礼仪培训</a>
+                        </p>
+                        <p>
+                            <span>下一篇：</span>
+                            <a href="">千信新能源开展2022年“安全生</a>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- footer -->
+        @-@include('./footer.html')
+
+    </div>
+
+    <!-- 底部 -->
+    <script src="js/inside.js" type="text/javascript" charset="utf-8"></script>
+    @-@include('./bottom.html')
+
+</body>

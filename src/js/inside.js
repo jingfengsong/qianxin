@@ -53,4 +53,70 @@ $(function () {
 
     });
 
+    // 产业
+    if ($('#cy1').length > 0) {
+        new Swiper('#cy1', {
+            slidesPerView: 'auto',
+            // centeredSlides: true,
+            spaceBetween: 20,
+            loop: true,
+            speed: 1000,
+            navigation: {
+                nextEl: '.cy1rig',
+                prevEl: '.cy1lef',
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                }
+            },
+            autoplay: {
+                disableOnInteraction: false,
+                delay: 7000,
+                stopOnLastSlide: false,
+            },
+        });
+    }
+
+    if ($('#cy2').length > 0) {
+        new Swiper('#cy2', {
+            slidesPerView: 'auto',
+            // centeredSlides: true,
+            spaceBetween: "3%",
+            loop: true,
+            speed: 1000,
+            breakpoints: {
+                768: {
+                }
+            },
+            autoplay: {
+                disableOnInteraction: false,
+                delay: 5000,
+                stopOnLastSlide: false,
+            },
+        });
+    }
+
+    // 党建
+    if ($('#dj1').length > 0) {
+        new Swiper('#dj1', {
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true,
+            },
+            autoplay: {
+                disableOnInteraction: false,
+                delay: 6000,
+                stopOnLastSlide: false,
+            },
+            pagination: {
+                el: '#dj1 .swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+            speed: 500
+        });
+    }
+
 })

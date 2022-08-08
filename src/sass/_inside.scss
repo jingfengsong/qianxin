@@ -919,3 +919,1184 @@ nav.in::before {
 }
 
 // 产业布局
+.cy1 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cybt {
+    padding: 50px 0 20px;
+    font-size: 24px;
+    color: $col;
+    font-weight: bold;
+}
+
+.cy1xq {
+    font-size: 16px;
+    color: #333333;
+    line-height: 2;
+}
+
+.cy11 {
+    position: relative;
+    margin-top: 40px;
+
+    >a {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -56px;
+    }
+
+    >a.cy1rig {
+        left: auto;
+        right: -56px;
+    }
+}
+
+#cy1 {
+    padding: 10px 0;
+
+    .swiper-slide {
+        width: 375px;
+        height: 282px;
+        @extend.df-sb;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s;
+
+        .img {
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            width: 375px;
+
+            img {
+                @extend.image;
+            }
+
+            p {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                text-align: center;
+                background: linear-gradient(180deg, transparent, rgba(17, 81, 143, .8));
+                height: 120px;
+                font-size: 18px;
+                color: #FFFFFF;
+                font-weight: bold;
+                padding: 0 10px;
+                @extend.wes;
+                padding-top: 75px;
+                transition: all 0.3s;
+            }
+        }
+
+        .det {
+            width: calc(100% - 375px);
+            height: 100%;
+            overflow: hidden;
+            transition: all 0.3s;
+            padding: 30px;
+            opacity: 0;
+
+            >span {
+                display: inline-block;
+                font-size: 18px;
+                color: #333333;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+
+            p {
+                position: relative;
+                font-size: 14px;
+                line-height: 32px;
+                color: #333333;
+                padding-left: 26px;
+
+                &::before {
+                    width: 6px;
+                    height: 2px;
+                    left: 10px;
+                    background: $col;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+
+    .swiper-slide-active {
+        width: 800px;
+
+        .img {
+            width: 50%;
+
+            p {
+                bottom: -120px;
+            }
+        }
+
+        .det {
+            width: 50%;
+            opacity: 1;
+            transition-delay: 0.3s;
+
+            >span {
+                animation: fadeInUp 0.5s;
+                animation-delay: 0.4s;
+            }
+
+            p {
+                animation: fadeInUp 1s;
+                animation-delay: 0.4s;
+            }
+        }
+    }
+}
+
+// 环保技能
+.cy2 {
+    width: 100%
+}
+
+.cy21 {
+    @extend.df-sb;
+    margin-top: 40px;
+
+    li {
+        width: 31.25%;
+        height: 290px;
+        background: #F2F4F8;
+        padding: 0 20px;
+    }
+
+    .img {
+        @extend.df-sb;
+
+        a {
+            display: inline-block;
+            width: 48%;
+            height: 180px;
+            overflow: hidden;
+
+            img {
+                @extend.image;
+            }
+        }
+
+        a:hover img {
+            @include img-hover1
+        }
+    }
+
+    p {
+        font-size: 16px;
+        color: #333333;
+        text-align: center;
+        @extend.wes;
+        margin-top: 20px;
+    }
+
+    .btt {
+        width: 200px;
+        line-height: 38px;
+        background: $col;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 18px;
+        color: #FFFFFF;
+        max-width: 100%;
+        @extend.wes;
+
+        margin: 0 auto {
+            top: -23px;
+            bottom: 28px;
+        }
+
+        position: relative;
+    }
+}
+
+// 其他产业
+.cy31 {
+    @extend.df-sb;
+    height: 130px;
+    margin-top: 30px;
+
+    .bt {
+        width: 40px;
+        height: 100%;
+        background: $col;
+
+        p {
+            writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            font-size: 18px;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 40px;
+            height: 100%;
+        }
+    }
+
+    .det {
+        width: calc(100% - 40px);
+        height: 100%;
+        padding: 0 30px;
+
+        border: 1px solid #DEDEDE {
+            left: none;
+        }
+    }
+}
+
+#cy2 {
+    width: 100%;
+    height: 100%;
+
+    .swiper-slide {
+        width: auto;
+    }
+
+    a {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-height: 90%;
+        }
+    }
+}
+
+// 企业战略-产业规划
+.cy4 {
+    margin-top: 20px;
+    padding-bottom: 70px
+}
+
+.cy41 {
+    @extend.df-sb;
+    align-items: flex-start;
+}
+
+.cy42 {
+    width: 47.5%;
+}
+
+.cy43 {
+    margin-top: 30px;
+    width: 100%;
+    height: 410px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: url(../image/cy41.png) no-repeat center bottom;
+    background-size: 100% auto;
+}
+
+.cy44 {
+    padding: 40px 35px;
+
+    p {
+        font-size: 16px;
+        color: $col;
+        line-height: 50px;
+        margin-bottom: 36px;
+        border-left: 3px solid $col;
+        padding-left: 14px;
+        background: linear-gradient(90deg, rgba(17, 81, 143, .05) 0%, rgba(17, 81, 143, .05) 70%, transparent 100%);
+        font-weight: bold;
+    }
+}
+
+.cy45 {
+    padding: 40px 30px;
+}
+
+.list {
+    position: relative;
+
+    &::before {
+        width: 1px;
+        height: 100%;
+        left: 9px;
+        top: 12px;
+        border-left: 1px dashed #CFCFCF;
+    }
+
+    .item {
+        @extend.df-sb;
+        align-items: flex-start;
+        padding-bottom: 20px;
+        position: relative;
+        z-index: 10;
+
+        >span {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 3px solid #CFCFCF;
+            background: #FFFFFF;
+            margin-top: 12px;
+        }
+
+        p {
+            width: calc(100% - 40px);
+            font-size: 16px;
+            color: #333333;
+            line-height: 40px;
+
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// 安全环保
+.aq {
+    width: 100%;
+    overflow: hidden;
+}
+
+.aq1 {
+    padding-bottom: 100px;
+
+    .bt {
+        span {
+            display: inline-block;
+            margin: 20px 0;
+            font-size: 26px;
+            color: $col;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 26px;
+            color: #888888;
+            text-transform: uppercase;
+            opacity: .5;
+            letter-spacing: 2px;
+        }
+    }
+
+    >p {
+        font-size: 17px;
+        color: #333333;
+        line-height: 40px;
+        text-indent: 2rem;
+        margin-top: 40px;
+
+        span {
+            color: $col;
+        }
+    }
+}
+
+.aq2 {
+    @extend.df-sb;
+    align-items: flex-start;
+    padding-bottom: 80px;
+    flex-wrap: nowrap;
+}
+
+.aq21 {
+    display: inline-block;
+
+    .bt {
+        display: inline-block;
+        line-height: 40px;
+        padding: 0 25px;
+        background: $col;
+        font-size: 18px;
+        color: #FFFFFF;
+        font-weight: bold;
+        border-radius: 0 5px 5px 0;
+    }
+
+    >span {
+        display: block;
+        margin: 30px 0;
+        font-size: 22px;
+        line-height: 1.5;
+        color: $col;
+        font-weight: bold;
+    }
+
+    p {
+        padding-left: 25px;
+        font-size: 16px;
+        color: #333333;
+        line-height: 42px;
+        position: relative;
+
+        &::before {
+            left: 0;
+            top: 50%;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border: 2px solid $col;
+            transform: translateY(-50%) rotate(45deg);
+        }
+    }
+}
+
+.zs {
+    display: inline-block;
+    max-width: calc(100% - 820px);
+}
+
+.zs1 {
+    width: 410px;
+    max-width: 100%;
+    height: 310px;
+    border: 1px solid #D0D0D0;
+    border-radius: 50%;
+    position: relative;
+
+    .zs2 {
+        position: absolute;
+        width: 162px;
+        height: 162px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 162px;
+        font-size: 30px;
+        color: #FFFFFF;
+        font-weight: bold;
+        left: 0;
+        top: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        transform: translate(-50%, -50%);
+        background: linear-gradient(180deg, #29AFDD, #3374B4);
+        cursor: pointer;
+        transition: all 0.5s;
+
+        span {
+            position: relative;
+            z-index: 10;
+        }
+
+        &::after {
+            width: 96%;
+            height: 96%;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    .zs3 {
+        left: auto;
+        right: 0;
+        transform: translate(50%, -50%);
+        background: linear-gradient(180deg, #55C0F2, #27A6D5);
+    }
+}
+
+// 节能减排
+.jn1 {
+    padding-bottom: 40px;
+
+    >p {
+        text-indent: 0;
+    }
+}
+
+.aq3 {
+    @extend.df-sb;
+    padding-bottom: 50px;
+
+    a {
+        width: 48.625%;
+        padding: 4px;
+        border: 1px solid $col;
+
+        .img {
+            width: 100%;
+            height: 260px;
+            overflow: hidden;
+
+            img {
+                @extend.image;
+            }
+        }
+    }
+
+    a:hover img {
+        @include img-hover1
+    }
+}
+
+// 新闻列表
+.xw {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.li-1 {
+    width: 100%;
+    padding-bottom: 30px;
+
+    li {
+        width: 100%;
+        padding: 35px 0;
+        transition: all 0.3s;
+        @extend.df-sb;
+        align-items: flex-start;
+        border-bottom: 1px solid #D4D4D4;
+
+        .img {
+            width: 280px;
+            height: 180px;
+            overflow: hidden;
+
+            img {
+                @extend.image;
+            }
+
+            &+.det {
+                width: calc(98% - 280px);
+            }
+        }
+
+        .det {
+            width: 100%;
+
+            >span {
+                display: block;
+                font-size: 18px;
+                color: #333333;
+                @extend.wes;
+                transition: all 0.3s;
+            }
+
+            >p {
+                margin: 15px 0 20px;
+                font-size: 14px;
+                color: #888888;
+                line-height: 32px;
+                height: 64px;
+                @include wes-(2);
+                transition: all 0.3s;
+            }
+
+            a {
+                width: 160px;
+                line-height: 40px;
+                font-size: 14px;
+                color: #16429A;
+                border: 1px solid #16429A;
+                position: relative;
+                transition: all 0.3s;
+                text-align: center;
+
+                span {
+                    position: relative;
+                    z-index: 10;
+                }
+
+                &::before {
+                    width: 0;
+                    opacity: 0;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    background: #16429A;
+                    transition: all 0.3s;
+                }
+            }
+
+            a:hover {
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                color: #FFFFFF;
+
+                &::before {
+                    width: 100%;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    li:hover {
+        img {
+            @include img-hover1;
+        }
+
+        padding: {
+            left: 10px;
+            right: 10px;
+        }
+
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+        .det {
+            >span {
+                color: $col;
+                font-weight: bold;
+            }
+
+            p {
+                color: $col;
+            }
+        }
+    }
+}
+
+.in-page {
+    width: 100%;
+    text-align: center;
+    margin: 30px 0;
+    /* float: left; */
+}
+
+.in-page span {
+    display: inline-block;
+    font-size: 0.875rem;
+    color: #666666;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+}
+
+.in-page .strong {
+    border: none;
+    background: #E2B70C;
+    color: #FFFFFF;
+}
+
+.in-page a {
+    display: inline-block;
+    font-size: 0.875rem;
+    color: #666666;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    transition: all 0.3s;
+}
+
+.in-page a:hover {
+    background-color: $col;
+    color: #FFFFFF;
+}
+
+// 新闻详情
+.indet {
+    width: 100%;
+
+    .bt {
+        font-size: 26px;
+        color: #333333;
+        line-height: 1.5;
+        font-weight: bold;
+        padding: 30px 0;
+    }
+
+    .xq {
+        padding: 40px 0;
+        border-bottom: 1px solid #E8E8E8;
+
+        p {
+            text-align: justify;
+            font-size: 17px;
+            color: #333333;
+            line-height: 40px;
+            text-indent: 2rem;
+
+            img {
+                margin-left: -2rem !important;
+            }
+        }
+
+        img {
+            max-width: 100% !important;
+            height: auto !important;
+        }
+    }
+
+    .page {
+        padding: 30px 0;
+
+        p {
+            @extend.wes;
+            font-size: 16px;
+            line-height: 40px;
+
+            span {
+                color: #333;
+            }
+
+            a {
+                color: $col
+            }
+
+            a:hover {
+                font-weight: bold
+            }
+        }
+    }
+}
+
+.mebtn {
+    @extend.df-sb;
+    background: #F2F4F8;
+    padding: 0 25px;
+
+    .lef {
+        display: inline-block;
+        line-height: 50px;
+
+        span {
+            display: inline-block;
+            font-size: 14px;
+            color: #333333;
+            opacity: .5;
+            margin-right: 20px;
+        }
+    }
+
+    .index-fx {
+        display: inline-block;
+    }
+}
+
+.index-fx a {
+    position: relative;
+}
+
+.index-fx a>img {
+    margin: 0 2px;
+    transform: translateY(25%);
+}
+
+.wechat-qrcode {
+    display: none;
+    z-index: 20;
+    border: 1px solid #eee;
+    position: absolute;
+    z-index: 9;
+    top: -205px;
+    left: -84px;
+    width: 200px;
+    height: 192px;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 10px #aaa;
+    transition: all 200ms;
+    -webkit-tansition: all 350ms;
+    -moz-transition: all 350ms;
+}
+
+.wechat-qrcode::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -6px;
+    bottom: -13px;
+    width: 0;
+    height: 0;
+    border-width: 8px 6px 6px 6px;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+.wechat-qrcode h4 {
+    font-weight: normal;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    color: #777;
+}
+
+.wechat-qrcode .qrcode {
+    width: 105px;
+    margin: 10px auto;
+}
+
+.wechat-qrcode .qrcode img {
+    width: 100px;
+    height: 100px;
+}
+
+.wechat-qrcode .help p {
+    font-weight: normal;
+    line-height: 16px;
+    font-size: 12px;
+    color: #333333;
+    padding: 0;
+    margin: 0;
+}
+
+.index-fx a:hover .wechat-qrcode {
+    display: block;
+    animation: fadeInUp 0.5s;
+}
+
+
+// 党建
+$col2: #C70D13;
+$col3: #FE0000;
+
+.dj {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.dj1 {
+    @extend.df-sb;
+    align-items: flex-start;
+
+    &-lef {
+        width: 65.625%;
+
+    }
+
+    &-rig {
+        width: 31.25%;
+    }
+}
+
+.dj1-lef-1 {
+    @extend.df-sb;
+    align-items: flex-start
+}
+
+.djbt {
+    background: url(../image/dj-bt.png) no-repeat left center;
+    padding-left: 38px;
+    margin-bottom: 30px;
+
+    &2 {
+        @extend.df-sb;
+        border-bottom: 1px solid $col3;
+        padding-bottom: 2px;
+
+        span {
+            display: inline-block;
+            font-size: 18px;
+            color: $col3;
+            font-weight: bold;
+            padding-bottom: 5px;
+            border-bottom: 2px solid $col3;
+        }
+
+        a {
+            font-size: 14px;
+            color: #FFA11B;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+#dj1 {
+    width: 47.62%;
+    height: 333px;
+
+    .swiper-pagination {
+        width: auto;
+        left: auto;
+        bottom: 50px;
+        right: 10px;
+
+        span {
+            width: 10px;
+            height: 10px;
+            background: #FFFFFF;
+            opacity: .8;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $col3;
+            opacity: 1;
+        }
+    }
+
+    a {
+        display: block;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            @extend.image;
+        }
+
+        p {
+            position: absolute;
+            width: 100%;
+            line-height: 44px;
+            left: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, .6);
+            font-size: 16px;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 0 10px;
+            @extend.wes;
+            transition: all 0.5s;
+            transition-delay: .5s;
+            transform: translate(0, 100%);
+        }
+
+        span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100px;
+            line-height: 34px;
+            background: rgba(254, 0, 0, 8);
+            font-size: 16px;
+            color: #FFFFFF;
+            text-align: center;
+            transition: all 0.5s;
+            transition-delay: .5s;
+            transform: translate(-100%, 0);
+        }
+    }
+
+    a:hover {
+        img {
+            @include img-hover1
+        }
+    }
+
+    .swiper-slide-active {
+
+
+        span,
+        p {
+            transform: translate(0, 0);
+        }
+    }
+}
+
+.dli-1 {
+    width: 49.52%;
+
+    li {
+        margin-bottom: 26px;
+
+        &:last-child {
+            margin-bottom: 0
+        }
+
+        a {
+            @extend.df-sb;
+
+            label {
+                display: inline-block;
+                width: 64px;
+                height: 64px;
+                border: 1px solid #D2D2D2;
+                text-align: center;
+                padding-top: 10px;
+                transition: all 0.3s;
+
+                span {
+                    font-size: 20px;
+                    color: #555555;
+                    transition: all 0.3s;
+
+                }
+
+                p {
+                    font-size: 14px;
+                    color: #888888;
+                    transition: all 0.3s;
+
+                }
+            }
+
+            .det {
+                width: calc(100% - 84px);
+
+                span {
+                    width: 100%;
+                    font-size: 16px;
+                    display: inline-block;
+                    color: #333333;
+                    @extend.wes;
+                    transition: all 0.3s;
+
+                }
+
+                p {
+                    font-size: 14px;
+                    color: #888888;
+                    @extend.wes;
+                    margin-top: 5px;
+                    transition: all 0.3s;
+
+                }
+            }
+        }
+
+        a:hover {
+            label {
+                border-color: $col3;
+
+                span,
+                p {
+                    color: $col3;
+                }
+            }
+
+            .det {
+
+                span,
+                p {
+                    color: $col3;
+                }
+
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.dli-2 {
+    li {
+        width: 100%;
+        margin-bottom: 26px;
+
+        &:last-child {
+            margin-bottom: 0
+        }
+    }
+
+    a {
+        display: block;
+        height: 64px;
+        border: 1px solid #E7E7E7;
+        padding: 10px;
+        position: relative;
+        transition: all .3s;
+
+        &::before {
+            width: 2px;
+            height: 10px;
+            left: -1px;
+            top: 15px;
+            background: $col3;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333333;
+            @extend.wes;
+            transition: all 0.3s;
+        }
+
+        span {
+            font-size: 14px;
+            color: #888888;
+        }
+    }
+
+    a:hover {
+        border-color: $col3;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        &::before {
+            // background: #333;
+        }
+
+        p {
+            color: $col3;
+            font-weight: bold;
+        }
+    }
+}
+
+.dj2 {
+    @extend.df-sb;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+
+.dj3 {
+    width: 48.75%;
+}
+
+.dli-3 {
+    li {
+        a {
+            width: 100%;
+            @extend.df-sb;
+            padding-left: 20px;
+            background: url(../image/dj2.png) no-repeat left 3px center;
+            transition: all 0.3s;
+            line-height: 44px;
+
+            p {
+                font-size: 16px;
+                color: #424242;
+                transition: all 0.3s;
+                width: calc(100% - 100px);
+                @extend.wes;
+            }
+
+            span {
+                font-size: 14px;
+                color: #888888;
+            }
+        }
+
+        a:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding-right: 10px;
+
+            p {
+                color: $col3;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// 党建详情-党建列表
+.dang {
+    .li-1 li .det a {
+        color: $col2;
+        border-color: $col2;
+
+        &::before {
+            background: $col2;
+        }
+    }
+
+    .li-1 li:hover {
+        .det {
+
+            >span,
+            p {
+                color: $col2;
+            }
+        }
+    }
+
+    .in-page a:hover {
+        background-color: $col2;
+    }
+
+    .indet .page p a {
+        color: $col2;
+    }
+}

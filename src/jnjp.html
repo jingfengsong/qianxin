@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+@-@include('./header.html',{ title: '节能减排',show: 'active'})
+
+<body class="bodyhid">
+
+    <div class="qx">
+
+        <!-- nav -->
+        @-@include('./nav.html',{ title: '节能减排',show: 'active'})
+
+        <!-- 大图 -->
+        <div class="tu">
+            <img src="image/tu1.png" alt="">
+            <!-- 指示条 -->
+            <div class="tiao">
+                <div class="container">
+                    <p>
+                        当前位置：
+                        <a href="">首页</a> >
+                        <a href="">社会责任</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 二级菜单 -->
+        <div class="menubtn">
+            <div class="container">
+                <ul class="menubtn2">
+                    <li><a href="">安全环保</a></li>
+                    <li class="on"><a href="#">节能减排</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 节能减排 -->
+        <div class="aq jn">
+            <div class="container">
+
+                <!-- 11111 -->
+                <div class="aq1 jn1">
+                    <div class="bt">
+                        <span data-aos="fade-up">节能减排</span>
+                        <p data-aos="fade-up">Safety and environmental protection</p>
+                    </div>
+                    <p data-aos="fade-up">
+                        <span>实现2030年前碳达峰、2060年前碳中和(简称“双碳”目标)是党中央经过深思熟虑作出的重大战略部署，也是有世界意义的应对气候变化的庄严承诺。</span>
+                        实现碳达峰、碳中和，需要对现行社会经济体系进行一场广泛而深刻的系统性变革。促进能源电力系统低碳化、电气化、智能化，低碳燃料转化以及应用负排放技术是2060年前实现碳中和的基本路径。“双碳”目标的提出将把我国的绿色发展之路提升到新的高度，成为我国未来数十年内社会经济发展的主基调之一。<br>
+                        目前公司光伏发电设备装机容量达308MWp，环保业务涉及废气、废水处理等板块，为实现“双碳”目标奠定坚实基础。
+                    </p>
+                </div>
+
+                <!-- 3333333 -->
+                <div class="aq3">
+                    <a href="" data-aos="fade-left">
+                        <div class="img">
+                            <img src="image/aq1.png" alt="">
+                        </div>
+                    </a>
+                    <a href="" data-aos="fade-right">
+                        <div class="img">
+                            <img src="image/aq1.png" alt="">
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- footer -->
+        @-@include('./footer.html')
+
+    </div>
+
+    <!-- 底部 -->
+    <script src="js/inside.js" type="text/javascript" charset="utf-8"></script>
+    @-@include('./bottom.html')
+
+</body>
