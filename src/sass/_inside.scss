@@ -6,9 +6,13 @@
     width: 100%;
 }
 
-nav.in::before {
-    height: 110px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .5), transparent);
+nav.in {
+    position: absolute;
+
+    &::before {
+        height: 110px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, .5), transparent);
+    }
 }
 
 .tu {
@@ -359,7 +363,7 @@ nav.in::before {
     height: 770px;
     padding-top: 80px;
     background: url(../image/js4.png) no-repeat center bottom;
-    background-attachment: fixed;
+    // background-attachment: fixed;
 }
 
 .inds-1 {
@@ -855,8 +859,8 @@ nav.in::before {
 // 联系我们
 .gs8 {
     padding: 50px 0 60px;
-    background: url(../image/js8.png) center bottom #F1F1F1;
-    background-attachment: fixed;
+    background: url(../image/js8.png) center center #F1F1F1;
+    background-size: cover;
 }
 
 .js8 {
@@ -1124,6 +1128,7 @@ nav.in::before {
     @extend.df-sb;
     height: 130px;
     margin-top: 30px;
+    margin-bottom: 65px;
 
     .bt {
         width: 40px;
@@ -1175,7 +1180,7 @@ nav.in::before {
 // 企业战略-产业规划
 .cy4 {
     margin-top: 20px;
-    padding-bottom: 70px
+    padding-bottom: 10px
 }
 
 .cy41 {
@@ -1765,8 +1770,8 @@ $col3: #FE0000;
     align-items: flex-start;
 
     &-lef {
-        width: 65.625%;
-
+        // width: 65.625%;
+        width: 100%;
     }
 
     &-rig {
@@ -1811,7 +1816,7 @@ $col3: #FE0000;
 
 #dj1 {
     width: 47.62%;
-    height: 333px;
+    height: 475px;
 
     .swiper-pagination {
         width: auto;
@@ -1894,7 +1899,7 @@ $col3: #FE0000;
     width: 49.52%;
 
     li {
-        margin-bottom: 26px;
+        margin-bottom: 38px;
 
         &:last-child {
             margin-bottom: 0
@@ -1976,13 +1981,19 @@ $col3: #FE0000;
     }
 }
 
+.dj4 {
+    padding-top: 40px
+}
+
 .dli-2 {
+    @extend.df-sb;
+
     li {
-        width: 100%;
+        width: 31.25%;
         margin-bottom: 26px;
 
-        &:last-child {
-            margin-bottom: 0
+        &:nth-child(3n-1):last-child {
+            margin-right: 34.375%;
         }
     }
 
@@ -2104,5 +2115,105 @@ $col3: #FE0000;
 
     .indet .page p a {
         color: $col2;
+    }
+}
+
+// update-20220914
+.cy5 {
+    overflow: hidden
+}
+
+.cy51 {
+    @extend.df-sb;
+    margin-bottom: 10px;
+    margin-top: 40px;
+
+    .item {
+        width: 23.75%;
+        border: 1px solid #E4E4E4;
+        position: relative;
+        padding: 40px 20px 0;
+
+        .bt {
+            width: 140px;
+            height: 38px;
+            position: absolute;
+            left: 20px;
+            top: -19px;
+            border: 1px solid #E4E4E4;
+            text-align: center;
+            background: #ffffff;
+            font-size: 18px;
+            color: $col;
+            font-weight: bold;
+            line-height: 38px;
+        }
+
+        .xq {
+            width: 100%;
+        }
+
+        .item1 {
+            @extend.df-sb;
+            height: 140px;
+            background: #F2F4F8;
+            border-radius: 10px;
+            overflow: hidden;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            transition: all .3s;
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .img {
+                width: 42%;
+                height: 100%;
+
+                img {
+                    @extend.image;
+                }
+            }
+
+            .det {
+                width: 58%;
+                padding: 15px;
+
+                span {
+                    display: inline-block;
+                    font-size: 16px;
+                    width: 100%;
+                    @extend.wes;
+                    color: $col;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 2;
+                    margin-top: 10px;
+                    color: #333;
+                    @include wes-(3);
+                }
+            }
+        }
+    }
+}
+
+.gs9 {
+    padding: 80px 0;
+    background: url(../image/js9.png) center center;
+    background-attachment: fixed;
+}
+
+.js91 {
+    padding-top: 60px;
+    text-align: center;
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
     }
 }

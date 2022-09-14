@@ -52,6 +52,11 @@
     .sou {
         display: none;
     }
+
+    .cy51 .item {
+        width: 49%;
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width:992px) {
@@ -884,7 +889,7 @@
     }
 
     .cy4 {
-        padding-bottom: 40px;
+        padding-bottom: 0;
     }
 
     .aq1 {
@@ -1089,6 +1094,8 @@
 
     .dli-2 {
         li {
+            width: 100%;
+            margin-right: 0 !important;
             margin-bottom: 15px;
         }
     }
@@ -1099,5 +1106,43 @@
         &:nth-child(2) {
             margin-top: 20px;
         }
+    }
+
+    .cy4 {
+        padding-top: 0;
+    }
+
+    .cy51 .item {
+        width: 100%;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        padding: {
+            left: 10px;
+            right: 10px;
+        }
+
+        .item1 {
+            height: 120px;
+
+            .det {
+                padding: 10px;
+
+                p {
+                    margin-top: 5px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+
+    .gs9 {
+        padding: 30px 0;
+    }
+
+    .js91 {
+        padding-top: 20px;
     }
 }

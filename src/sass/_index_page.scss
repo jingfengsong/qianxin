@@ -1,7 +1,8 @@
 @import "index";
 // index-page
 // 第二屏
-$blue:#19569A;
+$blue: #19569A;
+
 .a2 {
     position: absolute;
     left: 0;
@@ -14,10 +15,12 @@ $blue:#19569A;
 .a3 {
     @extend.df-sb;
     height: 100%;
+
     li {
         color: #FFFFFF;
         text-align: center;
     }
+
     .p1 {
         span:nth-child(1) {
             font-size: 50px;
@@ -26,10 +29,12 @@ $blue:#19569A;
             width: 130px;
             text-align: center;
         }
+
         span:nth-child(2) {
             font-size: 16px;
         }
     }
+
     .p2 {
         font-size: 18px;
     }
@@ -42,18 +47,22 @@ $blue:#19569A;
 .a12 {
     @extend.df-sb;
     align-items: flex-start;
+
     .lef {
         width: 42.75%;
         color: #FFFFFF;
+
         .p1 {
             font-size: 56px;
             font-weight: bold;
         }
+
         .p2 {
             font-size: 26px;
             font-weight: bold;
             margin: 20px 0 40px;
         }
+
         .p3 {
             font-size: 18px;
             line-height: 44px;
@@ -61,6 +70,7 @@ $blue:#19569A;
             @include wes-(4);
         }
     }
+
     .rig {
         width: 50%;
         padding-top: 130px;
@@ -70,11 +80,13 @@ $blue:#19569A;
 .a13 {
     @extend.df-sb;
     margin-top: 50px;
+
     li {
         width: 27.6%;
         height: 120px;
         text-align: center;
     }
+
     a {
         width: 100%;
         height: 100%;
@@ -82,6 +94,7 @@ $blue:#19569A;
         position: relative;
         overflow: hidden;
         transition: all 0.3s;
+
         &::before,
         &::after {
             width: 100%;
@@ -93,38 +106,47 @@ $blue:#19569A;
             opacity: 0;
             transform: translate(50%, 50%) scale(1.2);
         }
+
         &::before {
             transform: translate(-50%, -50%) scale(1.2);
         }
+
         * {
             position: relative;
             z-index: 10;
         }
+
         .img {
             width: 100%;
             height: 78px;
             display: flex;
             align-items: center;
             justify-content: center;
+
             img {
                 transition: all 0.8s;
             }
         }
+
         p {
             font-size: 18px;
         }
     }
+
     a:hover {
         overflow: inherit;
         box-shadow: 0 0 30px rgba(255, 255, 255, .5);
         transform: translateY(-5px) scale(1.05);
+
         img {
             transform: rotateY(180deg);
         }
+
         p {
             animation: fadeInUp 0.5s;
             font-weight: bold;
         }
+
         &::before,
         &::after {
             opacity: 1;
@@ -138,6 +160,7 @@ $blue:#19569A;
     height: 475px;
     border-radius: 10px;
     position: relative;
+
     &::before {
         width: calc(100% - 60px);
         height: 100%;
@@ -146,18 +169,21 @@ $blue:#19569A;
         border-radius: 10px;
         border: 1px solid #FFFFFF;
     }
+
     >div {
         position: relative;
         z-index: 10;
-        height: 100%!important;
+        height: 100% !important;
         border-radius: 10px;
     }
+
     video {
         width: 100%;
         height: 100%;
         border-radius: 10px;
         object-fit: cover;
     }
+
     .vjs-poster {
         background-size: cover;
         border-radius: 10px;
@@ -178,6 +204,7 @@ $blue:#19569A;
     padding-left: 25px;
     color: #FFFFFF;
     padding-top: 20px;
+
     p {
         font-size: 30px;
         text-transform: uppercase;
@@ -185,6 +212,7 @@ $blue:#19569A;
         font-family: monospace;
         letter-spacing: 8px;
     }
+
     span {
         font-weight: bold;
         font-size: 40px;
@@ -195,10 +223,12 @@ $blue:#19569A;
 .b33 {
     @extend.df-sb;
     width: 570px;
+
     li {
         width: 28%;
         position: relative;
         display: block;
+
         &::before {
             width: calc(100% - 8px);
             height: calc(100% - 8px);
@@ -210,6 +240,7 @@ $blue:#19569A;
             border: 1px solid rgba(36, 88, 161, .2);
             z-index: 10;
         }
+
         a {
             display: block;
             width: 100%;
@@ -223,6 +254,7 @@ $blue:#19569A;
             box-shadow: 0 0 10px rgba(0, 0, 0, .5);
             transition: all 0.3s;
             overflow: hidden;
+
             &::before {
                 width: 100%;
                 height: 100%;
@@ -234,19 +266,23 @@ $blue:#19569A;
                 transform: scale(2);
                 opacity: 0;
             }
+
             span {
                 position: relative;
                 z-index: 10;
             }
         }
     }
+
     li.on {
         &::before {
             border-color: rgba(255, 255, 255, .2);
         }
+
         a {
             overflow: inherit;
             color: #FFFFFF;
+
             &::before {
                 transform: scale(1);
                 opacity: 1;
@@ -258,14 +294,17 @@ $blue:#19569A;
 .b4 {
     display: block;
     padding-top: 5vh;
+
     .b5 {
         @extend.df-sb;
         align-items: flex-start;
         display: none;
     }
+
     .b5.on {
         display: flex;
         animation: fadeInUp 0.5s;
+
         .mo-1 {
             animation: fadeInUp 0.8s;
         }
@@ -276,32 +315,39 @@ $blue:#19569A;
     width: 44%;
     height: 505px;
     transition: all 0.5s;
+
     &:hover {
         box-shadow: 0 0 20px rgba(255, 255, 255, .5);
     }
+
     .swiper-pagination {
         width: auto;
         left: auto;
         right: 20px;
         bottom: 20px;
+
         span {
             width: 10px;
             height: 10px;
             background: #BEBEBE;
             opacity: 1;
         }
+
         .swiper-pagination-bullet-active {
             background-color: #FFC000;
         }
     }
+
     a {
         width: 100%;
         height: 100%;
         position: relative;
     }
+
     img {
         @extend.image;
     }
+
     p {
         position: absolute;
         left: 0;
@@ -314,10 +360,12 @@ $blue:#19569A;
         padding: 0 120px 0 10px;
         @extend.wes;
     }
+
     a:hover {
         img {
             @include img-hover1
         }
+
         p {
             font-weight: bold;
         }
@@ -329,9 +377,11 @@ $blue:#19569A;
     @extend.df-sb;
     height: 505px;
     align-content: space-between;
+
     li {
         width: 48.83%;
     }
+
     a {
         width: 100%;
         height: 100%;
@@ -339,6 +389,7 @@ $blue:#19569A;
         background-size: cover;
         padding: 20px 30px;
         transition: all 0.3s;
+
         >span {
             display: block;
             font-size: 18px;
@@ -346,6 +397,7 @@ $blue:#19569A;
             font-weight: bold;
             @extend.wes;
         }
+
         >p {
             font-size: 16px;
             line-height: 30px;
@@ -353,26 +405,32 @@ $blue:#19569A;
             @include wes-(2);
             margin: 15px 0 30px;
         }
+
         .xq {
             @extend.df-sb;
             transition: all 0.3s;
+
             label {
                 display: inline-block;
                 color: $blue;
+
                 span {
                     font-size: 30px;
                     font-weight: bold;
                 }
+
                 p {
                     font-size: 16px;
                 }
             }
         }
     }
+
     a:hover {
         transform: translateY(-10px);
         box-shadow: 0 0 30px rgba(255, 255, 255, .2);
         border-radius: 10px;
+
         .xq {
             padding: 0 15px;
         }
@@ -394,10 +452,12 @@ a.mo-11 {
     border-radius: 50px;
     text-align: center;
     transition: all 0.3s;
+
     span {
         padding-right: 72px;
         background: url(../image/b5.png) no-repeat right center;
     }
+
     &:hover {
         background: $blue;
         box-shadow: 0 0 15px 1px rgba(255, 255, 255, .8);
@@ -417,22 +477,27 @@ a.mo-11 {
     margin-top: 6.5vh;
     height: 56vh;
     @extend.df-sb;
+
     li {
         width: 23.4%;
         height: 100%;
         transition: all 0.5s;
+
         a {
             width: 100%;
             height: 100%;
             transition: all 0.5s;
         }
+
         img {
             @extend.image;
         }
     }
+
     a {
         position: relative;
         overflow: hidden;
+
         .det {
             width: 100%;
             left: 0;
@@ -440,10 +505,12 @@ a.mo-11 {
             position: absolute;
             height: 148px;
             color: #FFFFFF;
+
             padding: {
                 left: 30px;
                 right: 30px;
             }
+
             .p1 {
                 font-size: 18px;
                 text-align: center;
@@ -451,6 +518,7 @@ a.mo-11 {
                 transform: translateY(90px);
                 transition-delay: 0.7s;
             }
+
             span {
                 font-size: 24px;
                 font-weight: bold;
@@ -459,6 +527,7 @@ a.mo-11 {
                 transition: all 0.5s;
                 transform: translateY(130px);
             }
+
             .p2 {
                 font-size: 18px;
                 margin-top: 20px;
@@ -469,6 +538,7 @@ a.mo-11 {
             }
         }
     }
+
     li:nth-child(1) {
         a {
             .det {
@@ -476,6 +546,7 @@ a.mo-11 {
             }
         }
     }
+
     li:nth-child(2) {
         a {
             .det {
@@ -483,6 +554,7 @@ a.mo-11 {
             }
         }
     }
+
     li:nth-child(3) {
         a {
             .det {
@@ -490,18 +562,22 @@ a.mo-11 {
             }
         }
     }
+
     li.on {
         width: 50%;
+
         a {
             .det {
                 .p1 {
                     transform: translateY(170px);
                     transition-delay: 0.6s;
                 }
+
                 span {
                     transform: translateY(-24px);
                     transition-delay: 0.8s;
                 }
+
                 .p2 {
                     transform: translateY(-24px);
                     transition-delay: 0.9s;
@@ -527,12 +603,14 @@ a.mo-11 {
 
 .d-fot2 {
     @extend.df-sb;
+
     p {
         line-height: 54px;
         color: #FFFFFF;
         font-size: 14px;
         opacity: .5;
     }
+
     a {
         color: #FFFFFF;
     }
@@ -542,9 +620,11 @@ a.mo-11 {
     display: inline-block;
     text-align: center;
     background: url(../image/bt2.png) no-repeat center top;
+
     p {
         letter-spacing: 14px;
     }
+
     padding: {
         left: 0;
     }
@@ -558,12 +638,15 @@ a.mo-11 {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+
     >div {
         height: 100%;
     }
+
     .xq {
         width: 660px;
     }
+
     .map {
         width: calc(100% - 660px);
     }
@@ -574,13 +657,16 @@ a.mo-11 {
     background: url(../image/d1.png) no-repeat center center;
     padding: 50px 50px 0;
     align-items: flex-start;
+
     .js {
         width: calc(100% - 230px);
+
         >img {
             display: block;
             margin-bottom: 20px;
             max-width: 100%;
         }
+
         p {
             font-size: 16px;
             line-height: 44px;
@@ -588,26 +674,33 @@ a.mo-11 {
             padding-left: 50px;
             background: url(../image/d3.png) no-repeat left 10px top 10px;
         }
+
         p:nth-child(3) {
             background-image: url(../image/d4.png);
         }
+
         p:nth-child(4) {
             background-image: url(../image/d5.png);
         }
+
         a {
             margin-top: 30px;
         }
     }
+
     .ma {
         width: 150px;
+
         a {
             width: 150px;
             text-align: center;
+
             img {
                 display: block;
                 width: 150px;
                 height: 150px;
             }
+
             p {
                 font-size: 14px;
                 color: #FFFFFF;
